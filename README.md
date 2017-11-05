@@ -13,7 +13,7 @@ Automatically ban IP addresses requesting suspicious URL paths from your Django 
 
 ## Installation
 ### Requirements
-* Python 3.6+ or Python 2.7+
+* Python 3.6+ or Python 2.7
 * Django 1.11+
 * IPWare 1.1.6+
 
