@@ -1,15 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from setuptools import setup, find_packages
+import io
 import re
 import os
 import sys
 
 
 def readme():
-    with open('README.md') as f:
-        return f.read()
-
+    with io.open("README.md", "r", encoding="utf-8") as my_file:
+        return my_file.read()
 
 setup(
     name='django-trapdoor',
@@ -37,5 +37,6 @@ setup(
         'Programming Language :: Python',
         'Programming Language :: Python :: 3.6',
         'Topic :: Utilities'
-    ]
+    ],
+    keywords='ip blocker countermeasure defensive scanning',
 )

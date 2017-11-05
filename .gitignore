@@ -104,6 +104,7 @@ var/
 .installed.cfg
 *.egg
 .eggs
+dist
 
 # Installer logs
 pip-log.txt
