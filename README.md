@@ -1,6 +1,7 @@
 # Django Trapdoor
 ## Build Status
 [![Build Status](https://travis-ci.org/MikaSoftware/django-trapdoor.svg?branch=master)](https://travis-ci.org/MikaSoftware/django-trapdoor)
+[![PyPI version fury.io](https://badge.fury.io/py/django-trapdoor.svg)](https://pypi.python.org/pypi/django-trapdoor)
 [![Coverage Status](https://coveralls.io/repos/github/MikaSoftware/django-trapdoor/badge.svg?branch=master)](https://coveralls.io/github/MikaSoftware/django-trapdoor?branch=master)
 
 ## About
