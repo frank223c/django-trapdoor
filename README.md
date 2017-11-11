@@ -57,7 +57,7 @@ This library also integrates with ``django-admin`` and thus you can further cont
 #### remove_banned_ip.py
 This command is to be used to remove a specific IP address that you feel no longer should be banned from your django website.
 
-### remove_banned_ips_older_then_by_days.py
+#### remove_banned_ips_older_then_by_days.py
 This command is used to remove banned ips which are older then a certain day count. This is a command useful for if you want to run a ``cronjob`` or ``background process`` to run periodically and remove banned IPs that are older then a certain day count.
 
 ### Environment Settings Variables
