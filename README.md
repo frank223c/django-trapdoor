@@ -8,7 +8,7 @@
 Automatically ban IP addresses requesting suspicious URL paths from your Django site.
 
 ## Supported Features
-* Has record of [170 unique suspicious URL paths](https://github.com/MikaSoftware/django-trapdoor/blob/master/trapdoor/constants.py) used by malicious users to scan your django site.
+* Has record of [275 unique suspicious URL paths](https://github.com/MikaSoftware/django-trapdoor/blob/master/trapdoor/constants.py) used by malicious users to scan your django site.
 * Automatic banning of IP addresses performing scanning attempts on your django site.
 * The banning process attempts retrieving users real IP addresses, using the [django-ipware](https://github.com/un33k/django-ipware) library.
 
