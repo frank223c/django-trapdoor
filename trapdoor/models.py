@@ -43,9 +43,16 @@ class BannedIP(models.Model):
         db_index=True
     )
     last_modified = models.DateTimeField(
-        _('The date this object was last modified.'),
-        help_text=_('The '),
+        _('Last Modified'),
+        help_text=_('The date this object was last modified.'),
         auto_now=True
+    )
+    meta = models.CharField(
+        _('Meta'),
+        help_text=_('Meta information associated with this banned IP address.'),
+        max_length=511,
+        blank=True,
+        null=True
     )
 
     class Meta:
