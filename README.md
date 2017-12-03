@@ -14,7 +14,7 @@ Automatically ban IP addresses requesting suspicious URL paths from your Django 
 
 ## Installation
 ### Requirements
-* Python 3.6+ or Python 2.7
+* Python 3.6+
 * Django 1.11+
 * IPWare 1.1.6+
 
@@ -40,8 +40,7 @@ Automatically ban IP addresses requesting suspicious URL paths from your Django 
 4. Update your database by running the following in your console
 
   ```bash
-  python manage.py makemigrations trapdoor
-  python manage.py migrate trapdoor
+  python manage.py migrate
   ```
 
 ## Usage
