@@ -36,6 +36,14 @@ class TrapdoorMiddleware(object):
         if is_real_address == False:
             ip_address = get_ip(request)
 
+        # Save the IP address to the request so the developers can use the
+        # IP address in their development instead of creating their own
+        # middleware.
+        request.trapdoor = {
+            'is_real_address': is_real_address,
+            'ip_address': is_real_address
+        }
+
         # Check if IP address is banned and deny entry if it is.
         banned = BannedIP.objects.filter(address=ip_address).exists()
         if banned:

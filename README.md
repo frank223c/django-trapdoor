@@ -51,6 +51,8 @@ Once you enable the ``TrapdoorMiddleware`` middleware in your django app, every 
 2. Else if real IP address is not blocked, check to see if the requested URL path is considered [suspicious](https://github.com/MikaSoftware/django-trapdoor/blob/master/trapdoor/constants.py) and if the path is then block immediately.
 3. Else if request URL path is not suspicious then do nothing
 
+If you would like to know the IP address of the request then use the ``request.trapdoor`` variable in your code.
+
 This library also integrates with ``django-admin`` and thus you can further control removing/adding IP address to ban there.
 
 ### Command Line

@@ -13,7 +13,7 @@ def readme():
 
 setup(
     name='django-trapdoor',
-    version='1.0.1',
+    version='1.0.2',
     url='https://github.com/mikasoftware/django-trapdoor',
     license='BSD 2-Clause License',
     description="Automatically ban IP addresses requesting suspicious URL paths from your Django site",
