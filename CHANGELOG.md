@@ -1,6 +1,7 @@
-## 1.0.5
+## 1.0.6
 
   - Fixing setup.py to include the migrations directory.
+  - Improved code coverage to 100%.
 
 ## 1.0.4
 
