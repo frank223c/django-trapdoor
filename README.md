@@ -40,7 +40,8 @@ Automatically ban IP addresses requesting suspicious URL paths from your Django 
 4. Update your database by running the following in your console
 
   ```bash
-  python manage.py migrate
+  python manage.py makemigrations trapdoor
+  python manage.py migrate trapdoor
   ```
 
 ## Usage
