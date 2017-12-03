@@ -14,7 +14,9 @@ class Command(BaseCommand):
         for ip_address in options['ip_address']:
             try:
                 BannedIP.objects.create(
-                    address=ip_address
+                    address=ip_address,
+                    is_real_address=True,
+                    note=_("Banned by console command.")
                 )
                 self.stdout.write(
                     self.style.SUCCESS(_('IP %s is now banned.') % ip_address))
