@@ -7,7 +7,7 @@ from trapdoor import constants
 from trapdoor import models
 
 
-class RemoveBannedIPCommandTestCase(TestCase):
+class BanIPCommandTestCase(TestCase):
     fixtures = []
 
     @classmethod
@@ -28,18 +28,18 @@ class RemoveBannedIPCommandTestCase(TestCase):
 
     def test_run_command_for_existing_ip(self):
         """
-        Run the 'remove_banned_ip' command and verify it ran successfully when
-        user enters IP address which does exist.
+        Run the 'ban_ip' command and verify it ran successfully when user
+        enters IP address which does exist.
         """
-        call_command('remove_banned_ip', '192.168.0.1', verbosity=0, interactive=False)
-        self.assertEqual(models.BannedIP.objects.count(), 0)
+        try:
+            call_command('ban_ip', '10.10.10.1', verbosity=0, interactive=False)
+        except Exception as e:
+            self.assertIn(str(e), 'Inputted IP address is not banned.')
 
     def test_run_command_for_non_existing_ip(self):
         """
-        Run the 'remove_banned_ip' command and verify it ran successfully when
-        user enters IP address which does not exist.
+        Run the 'ban_ip' command and verify it ran successfully when user
+        enters IP address which does not exist.
         """
-        try:
-            call_command('remove_banned_ip', '10.10.10.1', verbosity=0, interactive=False)
-        except Exception as e:
-            self.assertIn(str(e), 'Inputted IP address is not banned.')
+        call_command('ban_ip', '192.168.0.2', verbosity=0, interactive=False)
+        self.assertEqual(models.BannedIP.objects.count(), 2)

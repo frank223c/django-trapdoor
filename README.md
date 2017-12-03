@@ -57,11 +57,17 @@ If you would like to know the IP address of the request then use the ``request.t
 This library also integrates with ``django-admin`` and thus you can further control removing/adding IP address to ban there.
 
 ### Command Line
-#### remove_banned_ip.py
+#### ban_ip
+This command will add an IP address to ban.
+
+#### remove_banned_ip
 This command is to be used to remove a specific IP address that you feel no longer should be banned from your django website.
 
-#### remove_banned_ips_older_then_by_days.py
+#### remove_banned_ips_older_then_by_days
 This command is used to remove banned ips which are older then a certain day count. This is a command useful for if you want to run a ``cronjob`` or ``background process`` to run periodically and remove banned IPs that are older then a certain day count.
+
+#### print_banned_ips
+This command will print to the console all the IP addresses that where banned.
 
 ### Environment Settings Variables
 #### TRAPDOOR_DO_NOT_BAN_IP_ADDRESSES

@@ -1,3 +1,8 @@
+## 1.0.4
+
+  - Added "ban_ip" and "print_banned_ips" commands.
+  - Removed support for python 2.7.
+
 ## 1.0.3
 
   - Added "trapdoor" python dict object to every request so the developer can get the real IP address of the particular request.

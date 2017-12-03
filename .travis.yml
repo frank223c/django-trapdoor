@@ -3,7 +3,6 @@ language: python
 
 python:
   - "3.6"
-  - "2.7"
 
 env:
   - DJANGO="django==1.11.7"
