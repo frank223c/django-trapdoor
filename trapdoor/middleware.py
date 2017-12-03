@@ -41,7 +41,7 @@ class TrapdoorMiddleware(object):
         # middleware.
         request.trapdoor = {
             'is_real_address': is_real_address,
-            'ip_address': is_real_address
+            'ip_address': ip_address
         }
 
         # Check if IP address is banned and deny entry if it is.
