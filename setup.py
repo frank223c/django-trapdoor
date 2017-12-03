@@ -13,16 +13,14 @@ def readme():
 
 setup(
     name='django-trapdoor',
-    version='1.0.4',
+    version='1.0.5',
     url='https://github.com/mikasoftware/django-trapdoor',
     license='BSD 2-Clause License',
     description="Automatically ban IP addresses requesting suspicious URL paths from your Django site",
     long_description=readme(),
     author='Bartlomiej Mika',
     author_email='bart@mikasoftware.com',
-    packages=[
-        'trapdoor'
-    ],
+    packages=find_packages(),
     install_requires=[
         'django',
         'django-ipware'

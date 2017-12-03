@@ -1,3 +1,7 @@
+## 1.0.5
+
+  - Fixing setup.py to include the migrations directory.
+
 ## 1.0.4
 
   - Added "ban_ip" and "print_banned_ips" commands.
