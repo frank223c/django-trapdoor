@@ -1,4 +1,4 @@
-## 1.0.2
+## 1.0.3
 
   - Added "trapdoor" python dict object to every request so the developer can get the real IP address of the particular request.
   - Fixed bug with missing "migrations" and "management" folders not being included in pip source distribution.
